@@ -1,0 +1,14 @@
+[project]
+name = "ai-experiments"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv.sources]
+pyorch-experiment = { workspace = true }
+
+[tool.uv.workspace]
+members = [
+    "packages/*",
+    "apps/pytorch-experiment",
+]

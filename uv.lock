@@ -1,0 +1,19 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[manifest]
+members = [
+    "ai-experiments",
+    "pytorch-experiment",
+]
+
+[[package]]
+name = "ai-experiments"
+version = "0.1.0"
+source = { virtual = "." }
+
+[[package]]
+name = "pytorch-experiment"
+version = "0.1.0"
+source = { editable = "apps/pytorch-experiment" }
